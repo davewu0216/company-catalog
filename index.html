@@ -1,29 +1,78 @@
-<style>
-  body {
-    font-family: sans-serif;
-    margin: 0;
-    background-color: #f8f8f8;
-    padding: 20px;
-    text-align: center;
-  }
-  .info {
-    background-color: #fffbe6;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    line-height: 1.6;
-  }
-  a.button {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #206a3b; /* 深綠 */
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 6px;
-    margin: 10px;
-  }
-  a.button:hover {
-    background-color: #185a30; /* 深綠 hover */
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xcellent MFG Catalog</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+      padding: 20px;
+      text-align: center;
+    }
+    .info {
+      background-color: #fffbe6;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    a.button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #206a3b; /* 深綠 */
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 6px;
+      margin: 10px;
+    }
+    a.button:hover {
+      background-color: #185a30; /* hover 深綠 */
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🌐 Xcellent MFG Catalog</h2>
+
+  <div class="info">
+    📄 <strong>Click below to download the main catalog:</strong><br>
+    <a class="button" href="https://drive.google.com/file/d/1G_EJecqF2dsTHpcpfggBSvjDQV7UbJFE/view?usp=sharing" target="_blank">
+      Main Catalog
+    </a>
+    <br><br>
+    📄 <strong>Click below to download latest Additional Pages:</strong><br>
+    <a class="button" href="https://drive.google.com/file/d/1phzh-E2dSZWFAIj42E5cvqCbK2Br8NeZ/view?usp=drive_link" target="_blank">
+      Additional Pages
+    </a>
+  </div>
+
+  <div class="info">
+    📲 <strong>Add this page to your home screen for future access:</strong><br>
+    - iPhone: Tap <em>Share</em> → <em>Add to Home Screen</em><br>
+    - Android: Tap <em>⋮</em> → <em>Add to Home Screen</em><br><br>
+
+    📲 <strong>Fügen Sie diese Seite Ihrem Startbildschirm hinzu, um später schnell darauf zuzugreifen:</strong><br>
+    - iPhone: Tippen Sie auf <em>Teilen</em> → <em>Zum Startbildschirm hinzufügen</em><br>
+    - Android: Tippen Sie auf <em>⋮</em> → <em>Zum Startbildschirm hinzufügen</em><br><br>
+
+    📲 <strong>Agregue esta página a su pantalla de inicio para acceder rápidamente en el futuro:</strong><br>
+    - iPhone: Toque <em>Compartir</em> → <em>Agregar a pantalla de inicio</em><br>
+    - Android: Toque <em>⋮</em> → <em>Agregar a pantalla de inicio</em>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/add-to-homescreen@3.2.3/dist/addtohomescreen.min.js"></script>
+  <script>
+    addToHomescreen({
+      skipFirstVisit: false,
+      message: '📲 Add this page to your Home Screen for quick access!',
+      autostart: true,
+      maxDisplayCount: 1
+    });
+  </script>
+
+</body>
+</html>
