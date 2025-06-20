@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Company Catalog</title>
+  <title>Xcellnt MFG Catalog</title>
   <style>
     body {
       font-family: sans-serif;
@@ -40,15 +40,37 @@
 
   <div class="info">
     📄 <strong>Click below to view or download the full catalog (455MB):</strong><br>
-     <a class="button" href="https://drive.google.com/file/d/1Zy93e470IBaT6HEIWI00KzCYJmEJl1x0/view?usp=drive_link" target="_blank">
+    <a class="button" href="https://drive.google.com/file/d/1Zy93e470IBaT6HEIWI00KzCYJmEJl1x0/view?usp=drive_link" target="_blank">
       Open Catalog
     </a>
   </div>
 
   <div class="info">
+    <!-- 英文說明 -->
     📲 <strong>Add this page to your home screen for future access:</strong><br>
-    - iPhone: Tap <em>Share</em> → <br>
-    <em>Add to Home Screen</em><br>
+    - iPhone: Tap <em>Share</em> → <em>Add to Home Screen</em><br>
     - Android: Tap <em>⋮</em> → <em>Add to Home Screen</em><br><br>
 
-    📲 <strong>Fügen Sie diese Seite Ihrem Startbilds
+    <!-- 德文說明 -->
+    📲 <strong>Fügen Sie diese Seite Ihrem Startbildschirm hinzu, um später schnell darauf zuzugreifen:</strong><br>
+    - iPhone: Tippen Sie auf <em>Teilen</em> → <em>Zum Startbildschirm hinzufügen</em><br>
+    - Android: Tippen Sie auf <em>⋮</em> → <em>Zum Startbildschirm hinzufügen</em><br><br>
+
+    <!-- 西班牙文說明 -->
+    📲 <strong>Agregue esta página a su pantalla de inicio para acceder rápidamente en el futuro:</strong><br>
+    - iPhone: Toque <em>Compartir</em> → <em>Agregar a pantalla de inicio</em><br>
+    - Android: Toque <em>⋮</em> → <em>Agregar a pantalla de inicio</em>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/add-to-homescreen@3.2.3/dist/addtohomescreen.min.js"></script>
+  <script>
+    addToHomescreen({
+      skipFirstVisit: false,
+      message: '📲 Add this page to your Home Screen for quick access!',
+      autostart: true,
+      maxDisplayCount: 1
+    });
+  </script>
+
+</body>
+</html>
