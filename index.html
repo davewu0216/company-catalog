@@ -21,17 +21,21 @@
       padding: 20px;
       text-align: center;
     }
+    .logo-title-container {
+      margin-bottom: 20px;
+    }
     .logo {
       max-width: 300px;
-      margin: 0 auto 20px;
       display: block;
+      margin: 0 auto;
     }
-    h2 {
-      color: white;
-      background-color: #206a3b;
-      display: inline-block;
-      padding: 20px;
-      border-radius: 12px;
+    .visually-hidden {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
     }
     .info {
       background-color: #fffbe6;
@@ -54,8 +58,8 @@
       background-color: #185a30;
     }
     footer h1 {
-      font-family: "MingLiU", "PMingLiU", "serif";
-      font-size: 14px;
+      font-family: "MingLiU", "PMingLiU", serif;
+      font-size: 16px;
       font-weight: normal;
       color: #444;
       margin-top: 40px;
@@ -64,10 +68,12 @@
 </head>
 <body>
 
-  <!-- 🌟 LOGO 置中區塊 -->
-  <img class="logo" src="GG.PNG" alt="Xcellent Logo">
-
-  <h2>Xcellent MFG Catalogue<br><br>🌳✂️🪚🚿🚰♻️🪵🌿🪴🧤🏕️🏡🇹🇼🇹🇼🇹🇼</h2>
+  <!-- LOGO + 隱藏 SEO 標題 + 表情符號 -->
+  <div class="logo-title-container">
+    <img class="logo" src="GG.PNG" alt="Xcellent Logo">
+    <h1 class="visually-hidden" aria-hidden="true">Xcellent MFG Catalogue</h1>
+    <div style="font-size: 24px;">🇹🇼🌳✂️🪚🚰♻️🪵🌿🪴🧤🏕️🏡</div>
+  </div>
 
   <div class="info">
     📄 <strong>Click below to main catalogue:</strong><br>
@@ -94,7 +100,6 @@
     - iPhone: Toque <img src="share-icon.png" alt="Share Icon" style="height: 1em; vertical-align: middle;"> → Deslice hacia abajo → <em>“Agregar a pantalla de inicio”</em><br>
     - Android: Toque <em>⋮</em> → <em>Agregar a pantalla de inicio</em><br><br>
 
-    <!-- 🔗 官網說明與按鈕 -->
     <p><strong>Below please visit official website:</strong></p>
     <a class="button" href="https://www.xcellentmfg.com" target="_blank">Visit Official Website</a>
   </div>
