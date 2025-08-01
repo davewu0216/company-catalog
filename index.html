@@ -17,7 +17,7 @@
     body {
       font-family: sans-serif;
       margin: 0;
-      background-image: url('20200603104018wiowl1.jpg'); /* 背景圖 */
+      background-image: url('20200603104018wiowl1.jpg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -37,7 +37,8 @@
 
     .logo {
       width: 200%;
-      max-width: 600px;
+      max-width: 100%;
+      height: auto;
       display: block;
       margin: 0 auto;
     }
@@ -56,9 +57,16 @@
       padding: 20px;
       border-radius: 8px;
       margin: 20px auto;
-      width: 390px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       line-height: 1.6;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .info.narrow {
+      width: 390px;
+    }
+
+    .info.wide {
+      width: 780px;
     }
 
     a.button {
@@ -92,14 +100,15 @@
 </head>
 <body>
 
-  <!-- LOGO + 隱藏 SEO 標題 + 表情符號 -->
+  <!-- LOGO 區塊 -->
   <div class="logo-title-container">
     <img class="logo" src="GG.PNG" alt="Xcellent Logo">
     <h1 class="visually-hidden" aria-hidden="true">Xcellent MFG Catalogue</h1>
     <div style="font-size: 24px;">🌳🪵🌿🪴✂️🪚</div>
   </div>
 
-  <div class="info">
+  <!-- 三個主檔案按鈕 -->
+  <div class="info narrow">
     📄 <strong>Click below to main catalogue:</strong><br>
     <a class="button" href="https://drive.google.com/file/d/1G_EJecqF2dsTHpcpfggBSvjDQV7UbJFE/view?usp=sharing" target="_blank">
       Main Catalogue
@@ -116,7 +125,8 @@
     </a>
   </div>
 
-  <div class="info">
+  <!-- 三語言多語提示 -->
+  <div class="info wide">
     💡 <strong>(EN) Add this page to your home screen for future access:</strong><br>
     - iPhone: Tap <img src="share-icon.png" alt="Share Icon" style="height: 1em; vertical-align: middle;"> → Slide downward → <em>“Add to Home Screen”</em><br>
     - Android: Tap <em>⋮</em> → <em>Add to Home Screen</em><br><br>
@@ -133,10 +143,12 @@
     <a class="button" href="https://www.xcellentmfg.com" target="_blank">Visit Official Website</a>
   </div>
 
+  <!-- Footer -->
   <footer>
     <h1>Copyright © Xcellent Mfg. Associates Co. All Rights Reserved.</h1>
   </footer>
 
+  <!-- 自動提示加入主畫面 Script -->
   <script src="https://cdn.jsdelivr.net/npm/add-to-homescreen@3.2.3/dist/addtohomescreen.min.js"></script>
   <script>
     addToHomescreen({
