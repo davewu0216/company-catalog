@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Xcellent MFG Catalogue - Download Now</title>
 
-  <!-- ✅ Favicon 與 預覽圖 -->
+  <!-- ✅ Favicon 與預覽圖 -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <meta property="og:title" content="Xcellent MFG Catalogue" />
   <meta property="og:description" content="Download our latest garden tools catalog and updates." />
@@ -26,7 +26,7 @@
       text-align: center;
     }
 
-    .logo-title-container {
+    .main-box {
       background-color: rgba(255, 255, 255, 0.88);
       padding: 20px;
       border-radius: 8px;
@@ -40,7 +40,7 @@
       max-width: 100%;
       height: auto;
       display: block;
-      margin: 0 auto;
+      margin: 0 auto 20px auto;
     }
 
     .visually-hidden {
@@ -52,21 +52,14 @@
       overflow: hidden;
     }
 
-    .info {
+    .info.wide {
+      width: 780px;
       background-color: rgba(255, 255, 255, 0.88);
       padding: 20px;
       border-radius: 8px;
       margin: 20px auto;
-      line-height: 1.6;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .info.narrow {
-      width: 390px;
-    }
-
-    .info.wide {
-      width: 780px;
+      line-height: 1.6;
     }
 
     a.button {
@@ -77,7 +70,7 @@
       text-decoration: none;
       font-size: 18px;
       border-radius: 6px;
-      margin: 10px;
+      margin: 10px 0;
     }
 
     a.button:hover {
@@ -100,32 +93,31 @@
 </head>
 <body>
 
-  <!-- LOGO 區塊 -->
-  <div class="logo-title-container">
+  <!-- ✅ LOGO + 主目錄按鈕整合區塊 -->
+  <div class="main-box">
     <img class="logo" src="GG.PNG" alt="Xcellent Logo">
     <h1 class="visually-hidden" aria-hidden="true">Xcellent MFG Catalogue</h1>
-    <div style="font-size: 24px;"></div>
+    <div style="font-size: 24px;">🌳🪵🌿🪴✂️🪚</div>
+
+    <div style="margin-top: 20px;">
+      📄 <strong>Click below to main catalogue:</strong><br>
+      <a class="button" href="https://drive.google.com/file/d/1G_EJecqF2dsTHpcpfggBSvjDQV7UbJFE/view?usp=sharing" target="_blank">
+        Main Catalogue
+      </a>
+      <br><br>
+      📄 <strong>Click below to Additional Pages:</strong><br>
+      <a class="button" href="https://drive.google.com/file/d/176jBm55BZ_a8WCnNPd_dXHpm-nTBpbBh/view?usp=sharing" target="_blank">
+        Additional Pages
+      </a>
+      <br><br>
+      📄 <strong>Click below to Binding Series:</strong><br>
+      <a class="button" href="https://cutt.ly/NewvePWV" target="_blank">
+        Binding Series
+      </a>
+    </div>
   </div>
 
-  <!-- 三個主檔案按鈕 -->
-  <div class="info narrow">
-    📄 <strong>Click below to main catalogue:</strong><br>
-    <a class="button" href="https://drive.google.com/file/d/1G_EJecqF2dsTHpcpfggBSvjDQV7UbJFE/view?usp=sharing" target="_blank">
-      Main Catalogue
-    </a>
-    <br><br>
-    📄 <strong>Click below to Additional Pages:</strong><br>
-    <a class="button" href="https://drive.google.com/file/d/176jBm55BZ_a8WCnNPd_dXHpm-nTBpbBh/view?usp=sharing" target="_blank">
-      Additional Pages
-    </a>
-    <br><br>
-    📄 <strong>Click below to Binding Series:</strong><br>
-    <a class="button" href="https://cutt.ly/NewvePWV" target="_blank">
-      Binding Series
-    </a>
-  </div>
-
-  <!-- 三語言多語提示 -->
+  <!-- 📲 多語言主畫面提示 -->
   <div class="info wide">
     💡 <strong>(EN) Add this page to your home screen for future access:</strong><br>
     - iPhone: Tap <img src="share-icon.png" alt="Share Icon" style="height: 1em; vertical-align: middle;"> → Slide downward → <em>“Add to Home Screen”</em><br>
@@ -143,12 +135,12 @@
     <a class="button" href="https://www.xcellentmfg.com" target="_blank">Visit Official Website</a>
   </div>
 
-  <!-- Footer -->
+  <!-- 📜 Footer -->
   <footer>
     <h1>Copyright © Xcellent Mfg. Associates Co. All Rights Reserved.</h1>
   </footer>
 
-  <!-- 自動提示加入主畫面 Script -->
+  <!-- 📲 自動提示腳本 -->
   <script src="https://cdn.jsdelivr.net/npm/add-to-homescreen@3.2.3/dist/addtohomescreen.min.js"></script>
   <script>
     addToHomescreen({
