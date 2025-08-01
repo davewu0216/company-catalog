@@ -17,7 +17,7 @@
     body {
       font-family: sans-serif;
       margin: 0;
-      padding-top: 20px; /* 頁面最上方留白 */
+      padding-top: 20px;
       background-image: url('20200603104018wiowl1.jpg');
       background-size: cover;
       background-position: center;
@@ -30,17 +30,17 @@
       background-color: rgba(255, 255, 255, 0.88);
       padding: 20px;
       border-radius: 8px;
-      margin: 40px auto 20px auto;  /* 上方留白40px */
-      width: 390px;
+      margin: 40px auto 20px auto;
+      width: 90%;
+      max-width: 420px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     .logo {
-      width: 180%;
       max-width: 100%;
       height: auto;
       display: block;
-      margin: 0 auto 20px auto;
+      margin: 0 auto 16px auto;
     }
 
     .visually-hidden {
@@ -53,13 +53,14 @@
     }
 
     .info.wide {
-      width: 780px;
+      width: 90%;
+      max-width: 780px;
       background-color: rgba(255, 255, 255, 0.88);
       padding: 20px;
       border-radius: 8px;
       margin: 20px auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       line-height: 1.6;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     a.button {
@@ -70,7 +71,9 @@
       text-decoration: none;
       font-size: 18px;
       border-radius: 6px;
-      margin: 10px 0;
+      margin: 8px 0;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     a.button:hover {
@@ -79,70 +82,60 @@
 
     footer h1 {
       font-family: "MingLiU", "PMingLiU", serif;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: bold;
       color: #444;
-      margin-top: 40px;
+      margin-top: 30px;
       background-color: rgba(255, 255, 255, 0.85);
       padding: 10px;
       border-radius: 6px;
       display: inline-block;
-      max-width: 780px;
+      max-width: 90%;
     }
   </style>
 </head>
 <body>
 
-  <!-- LOGO + 主目錄按鈕整合區塊 -->
   <div class="main-box">
     <img class="logo" src="Green with White Background2nd.png" alt="Xcellent Logo">
-    <h1 class="visually-hidden" aria-hidden="true">Xcellent MFG Catalogue</h1>
+    <h1 class="visually-hidden">Xcellent MFG Catalogue</h1>
 
-    📄 <strong>Click below to main catalogue:</strong><br>
-    <a class="button" href="https://drive.google.com/file/d/1G_EJecqF2dsTHpcpfggBSvjDQV7UbJFE/view?usp=sharing" target="_blank">
-      Main Catalogue
-    </a>
-    <br><br>
-    📄 <strong>Click below to Additional Pages:</strong><br>
-    <a class="button" href="https://drive.google.com/file/d/176jBm55BZ_a8WCnNPd_dXHpm-nTBpbBh/view?usp=sharing" target="_blank">
-      Additional Pages
-    </a>
-    <br><br>
-    📄 <strong>Click below to Binding Series:</strong><br>
-    <a class="button" href="https://cutt.ly/NewvePWV" target="_blank">
-      Binding Series
-    </a>
+    📄 <strong>Main Catalogue</strong><br>
+    <a class="button" href="https://drive.google.com/file/d/1G_EJecqF2dsTHpcpfggBSvjDQV7UbJFE/view?usp=sharing" target="_blank">Main Catalogue</a>
+
+    📄 <strong>Additional Pages</strong><br>
+    <a class="button" href="https://drive.google.com/file/d/176jBm55BZ_a8WCnNPd_dXHpm-nTBpbBh/view?usp=sharing" target="_blank">Additional Pages</a>
+
+    📄 <strong>Binding Series</strong><br>
+    <a class="button" href="https://cutt.ly/NewvePWV" target="_blank">Binding Series</a>
   </div>
 
-  <!-- 多語言主畫面提示 -->
   <div class="info wide">
-    💡 <strong>Add this page to your home screen for future access:</strong><br>
-    - iPhone: Tap <img src="share-icon.png" alt="Share Icon" style="height: 1em; vertical-align: middle;"> → Slide downward → <em>“Add to Home Screen”</em><br>
-    - Android: Tap <em>⋮</em> → <em>Add to Home Screen</em><br><br>
+    💡 <strong>Add this page to your home screen:</strong><br>
+    <em>iPhone:</em> Tap <img src="share-icon.png" alt="Share Icon" style="height: 1em;"> → Slide down → <em>Add to Home Screen</em><br>
+    <em>Android:</em> Tap <em>⋮</em> → <em>Add to Home Screen</em><br><br>
 
-    💡 <strong>(DE) Fügen Sie diese Seite Ihrem Startbildschirm hinzu, um später schnell darauf zuzugreifen:</strong><br>
-    - iPhone: Tippen Sie auf <img src="share-icon.png" alt="Share Icon" style="height: 1em; vertical-align: middle;"> → Nach unten wischen → <em>„Zum Startbildschirm hinzufügen“</em><br>
-    - Android: Tippen Sie auf <em>⋮</em> → <em>Zum Startbildschirm hinzufügen</em><br><br>
+    💡 <strong>(DE) Zum Startbildschirm hinzufügen:</strong><br>
+    iPhone: Tippen <img src="share-icon.png" style="height: 1em;"> → Nach unten → <em>Zum Startbildschirm</em><br>
+    Android: <em>⋮</em> → <em>Zum Startbildschirm</em><br><br>
 
-    💡 <strong>(ES) Agregue esta página a su pantalla de inicio para acceder rápidamente en el futuro:</strong><br>
-    - iPhone: Toque <img src="share-icon.png" alt="Share Icon" style="height: 1em; vertical-align: middle;"> → Deslice hacia abajo → <em>“Agregar a pantalla de inicio”</em><br>
-    - Android: Toque <em>⋮</em> → <em>Agregar a pantalla de inicio</em><br><br>
+    💡 <strong>(ES) Agregar a pantalla de inicio:</strong><br>
+    iPhone: Toque <img src="share-icon.png" style="height: 1em;"> → Deslice → <em>Agregar</em><br>
+    Android: <em>⋮</em> → <em>Agregar</em><br><br>
 
-    <p><strong>Below please visit official website:</strong></p>
+    <p><strong>Visit our official website:</strong></p>
     <a class="button" href="https://www.xcellentmfg.com" target="_blank">Visit Official Website</a>
   </div>
 
-  <!-- Footer -->
   <footer>
     <h1>Copyright © Xcellent Mfg. Associates Co. All Rights Reserved.</h1>
   </footer>
 
-  <!-- 自動提示腳本 -->
   <script src="https://cdn.jsdelivr.net/npm/add-to-homescreen@3.2.3/dist/addtohomescreen.min.js"></script>
   <script>
     addToHomescreen({
       skipFirstVisit: false,
-      message: '📲 Add this page to your Home Screen for quick access!',
+      message: '📲 Add this page to your Home Screen!',
       autostart: true,
       maxDisplayCount: 1
     });
