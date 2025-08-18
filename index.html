@@ -1,36 +1,209 @@
-<section class="info" aria-labelledby="howto-title">
-  <h2 id="howto-title" style="margin:0 0 10px; text-align:center;">
-    Add this page to your Home Screen
-  </h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Xcellent MFG Catalogue – Download Now</title>
 
-  <div class="howto">
+  <!-- Canonical & SEO -->
+  <link rel="canonical" href="https://yourdomain.com/catalogue.html" />
+  <meta name="description" content="Download Xcellent MFG's latest garden tools catalogues (Main, Additional Pages, Binding Series). Add this page to your home screen for quick access." />
+  <meta name="keywords" content="Xcellent MFG, garden tools, catalogue, PDF download, binding series, gardening equipment" />
+  <meta name="theme-color" content="#206a3b" />
+
+  <!-- Social / Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Xcellent MFG Catalogue" />
+  <meta property="og:description" content="Download our latest garden tools catalog and updates." />
+  <meta property="og:image" content="https://yourdomain.com/images/preview.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/catalogue.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Multi-language discoverability -->
+  <link rel="alternate" hreflang="de" href="https://yourdomain.com/de/catalogue.html" />
+  <link rel="alternate" hreflang="es" href="https://yourdomain.com/es/catalogue.html" />
+
+  <!-- Icons / PWA -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <style>
+    :root {
+      --brand: #206a3b;
+      --brand-dark: #185a30;
+      --card-bg: rgba(255, 255, 255, 0.9);
+      --text: #1a1a1a;
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: #f4f7f5;
+      overflow: hidden;
+    }
+    .bg-container { position: fixed; inset: 0; z-index: -1; background: center/cover no-repeat url('small-bg.jpg'); filter: saturate(1.05); transform: translateZ(0); }
+    .content-wrapper { height: 100%; overflow: auto; padding: 24px; box-sizing: border-box; }
+    .main-box, .info { background: var(--card-bg); backdrop-filter: blur(4px); box-shadow: 0 10px 30px rgba(0,0,0,.08); border-radius: 12px; margin: 32px auto; padding: 20px; width: min(720px, 92vw); }
+    .main-box { text-align: center; }
+    .logo { display: block; margin: 0 auto 16px; max-width: 260px; width: 100%; height: auto; }
+    h1.visually-hidden { position: absolute; clip: rect(0 0 0 0); clip-path: inset(50%); width: 1px; height: 1px; overflow: hidden; white-space: nowrap; }
+    .buttons { display: grid; gap: 12px; grid-template-columns: 1fr; }
+    @media (min-width: 560px) { .buttons { grid-template-columns: 1fr 1fr 1fr; } }
+
+    a.button { display: inline-block; padding: 14px 16px; border-radius: 10px; text-decoration: none; color: #fff; background: linear-gradient(135deg, var(--brand), var(--brand-dark)); outline: none; text-align: center; font-weight: 600; letter-spacing: .2px; box-shadow: 0 6px 16px rgba(32,106,59,.25); }
+    a.button:hover { filter: brightness(1.02); }
+    a.button:focus-visible { box-shadow: 0 0 0 3px rgba(32,106,59,.35); }
+
+    .info p { line-height: 1.6; margin: 0 0 12px; }
+    .howto {
+      display: grid;
+      gap: 8px;
+      margin-top: 8px;
+      text-align: center; /* 置中 */
+    }
+    .howto b { display: inline-block; margin-bottom: 6px; }
+
+    footer { text-align: center; margin: 24px 0 8px; }
+    footer .copy { display: inline-block; background: var(--card-bg); padding: 10px 14px; border-radius: 10px; color: #444; font-weight: 600; }
+
+    /* A2HS inline prompt */
+    .a2hs-toast { position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%); background: var(--card-bg); border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.2); width: min(680px, 92vw); padding: 14px 16px; display: none; }
+    .a2hs-toast[open] { display: grid; gap: 10px; grid-template-columns: 1fr auto; align-items: center; }
+    .a2hs-actions { display: flex; gap: 8px; }
+    .a2hs-btn { border: 0; padding: 10px 14px; border-radius: 10px; font-weight: 600; cursor: pointer; }
+    .a2hs-install { background: var(--brand); color: #fff; }
+    .a2hs-dismiss { background: #e7ebe8; color: #333; }
+
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+  </style>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Xcellent MFG Catalogue",
+    "url": "https://yourdomain.com/catalogue.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Xcellent Mfg. Associates Co.",
+      "url": "https://www.xcellentmfg.com",
+      "logo": { "@type": "ImageObject", "url": "https://yourdomain.com/Green%20with%20White%20Background2nd.png" }
+    },
+    "description": "Download Xcellent MFG's latest garden tools catalogues (Main, Additional Pages, Binding Series)."
+  }
+  </script>
+</head>
+<body>
+  <div class="bg-container" aria-hidden="true"></div>
+  <div class="content-wrapper" role="main">
+
+    <section class="main-box" aria-labelledby="page-title">
+      <img class="logo" src="Green with White Background2nd.png" alt="Xcellent MFG logo" loading="eager" width="260" height="72" />
+      <h1 id="page-title" class="visually-hidden">Xcellent MFG Catalogue</h1>
+      <p style="margin:6px 0 16px; font-weight:600;">Download our latest PDF catalogues:</p>
+
+      <div class="buttons">
+        <a class="button" rel="noopener" target="_blank" href="https://drive.google.com/file/d/1G_EJecqF2dsTHpcpfggBSvjDQV7UbJFE/view?usp=sharing">📄 Main Catalogue</a>
+        <a class="button" rel="noopener" target="_blank" href="https://drive.google.com/file/d/176jBm55BZ_a8WCnNPd_dXHpm-nTBpbBh/view?usp=sharing">📄 Additional Pages</a>
+        <a class="button" rel="noopener" target="_blank" href="https://cutt.ly/NewvePWV">📄 Binding Series</a>
+      </div>
+    </section>
+
+    <section class="info" aria-labelledby="howto-title">
+      <h2 id="howto-title" style="margin:0 0 10px; text-align:center;">Add this page to your Home Screen</h2>
+
+      <div class="howto">
+        <b>iPhone (Safari)</b><br/>
+        Tap <img src="share-icon.png" alt="Share" style="height:1em; vertical-align:middle;"> → Scroll down → <em>“Add to Home Screen”</em>
+      </div>
+
+      <div class="howto">
+        <b>Android (Chrome)</b><br/>
+        Tap <em>⋮</em> → <em>Add to Home screen</em>
+      </div>
+
+      <hr style="margin:18px 0; border:0; height:1px; background:#e6ece8;" />
+
+      <div class="howto" lang="de">
+        <b>(DE) Zum Startbildschirm hinzufügen</b><br/>
+        iPhone: Tippen Sie auf <img src="share-icon.png" alt="Teilen" style="height:1em; vertical-align:middle;"> → Nach unten wischen → <em>„Zum Startbildschirm hinzufügen“</em><br/>
+        Android: Tippen Sie auf <em>⋮</em> → <em>Zum Startbildschirm hinzufügen</em>
+      </div>
+
+      <hr style="margin:18px 0; border:0; height:1px; background:#e6ece8;" />
+
+      <div class="howto" lang="es">
+        <b>(ES) Agregar a la pantalla de inicio</b><br/>
+        iPhone: Toque <img src="share-icon.png" alt="Compartir" style="height:1em; vertical-align:middle;"> → Deslice hacia abajo → <em>“Agregar a pantalla de inicio”</em><br/>
+        Android: Toque <em>⋮</em> → <em>Agregar a pantalla de inicio</em>
+      </div>
+
+      <p style="margin-top:14px; font-weight:600; text-align:center;">Visit official website:</p>
+      <p style="text-align:center;">
+        <a class="button" rel="noopener" target="_blank" href="https://www.xcellentmfg.com">Visit Official Website</a>
+      </p>
+    </section>
+
+    <footer>
+      <div class="copy">Copyright © Xcellent Mfg. Associates Co. All Rights Reserved.</div>
+    </footer>
+  </div>
+
+  <!-- Inline A2HS gentle prompt -->
+  <div class="a2hs-toast" id="a2hsToast" role="dialog" aria-live="polite" aria-label="Install app">
     <div>
-      <b>iPhone (Safari)</b><br/>
-      Tap <img src="share-icon.png" alt="Share" style="height:1em; vertical-align:middle;" loading="lazy"> → Scroll down → <em>“Add to Home Screen”</em>
+      <strong>📲 Add to Home Screen</strong><br/>
+      Install this page for quicker access and a cleaner fullscreen view.
     </div>
-    <div>
-      <b>Android (Chrome)</b><br/>
-      Tap <em>⋮</em> → <em>Add to Home screen</em>
+    <div class="a2hs-actions">
+      <button class="a2hs-btn a2hs-dismiss" id="a2hsDismiss" type="button">Not now</button>
+      <button class="a2hs-btn a2hs-install" id="a2hsInstall" type="button">Install</button>
     </div>
   </div>
 
-  <hr style="margin:18px 0; border:0; height:1px; background:#e6ece8;" />
+  <script>
+    // Swap to high-res background after load
+    window.addEventListener('load', () => {
+      const bg = document.querySelector('.bg-container');
+      const hi = new Image();
+      hi.src = '20200603104018wiowl1.jpg';
+      hi.onload = () => { bg.style.backgroundImage = `url('${hi.src}')`; };
+    });
 
-  <div class="howto" lang="de">
-    <b>(DE) Zum Startbildschirm hinzufügen</b><br/>
-    iPhone: Tippen Sie auf 
-    <img src="share-icon.png" alt="Teilen" style="height:1em; vertical-align:middle;" loading="lazy"> → Nach unten wischen → 
-    <em>„Zum Startbildschirm hinzufügen“</em><br/>
-    Android: Tippen Sie auf <em>⋮</em> → <em>Zum Startbildschirm hinzufügen</em>
-  </div>
+    // Register service worker
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(console.warn);
+      });
+    }
 
-  <hr style="margin:18px 0; border:0; height:1px; background:#e6ece8;" />
+    // A2HS prompt
+    let deferredPrompt = null;
+    const toast = document.getElementById('a2hsToast');
+    const btnInstall = document.getElementById('a2hsInstall');
+    const btnDismiss = document.getElementById('a2hsDismiss');
 
-  <div class="howto" lang="es">
-    <b>(ES) Agregar a la pantalla de inicio</b><br/>
-    iPhone: Toque 
-    <img src="share-icon.png" alt="Compartir" style="height:1em; vertical-align:middle;" loading="lazy"> → Deslice hacia abajo → 
-    <em>“Agregar a pantalla de inicio”</em><br/>
-    Android: Toque <em>⋮</em> → <em>Agregar a pantalla de inicio</em>
-  </div>
-</section>
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      if (!sessionStorage.getItem('a2hsShown')) {
+        toast.setAttribute('open', '');
+        sessionStorage.setItem('a2hsShown', '1');
+      }
+    });
+
+    btnInstall?.addEventListener('click', async () => {
+      if (!deferredPrompt) { toast.removeAttribute('open'); return; }
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      deferredPrompt = null;
+      toast.removeAttribute('open');
+      console.log('A2HS:', outcome);
+    });
+
+    btnDismiss?.addEventListener('click', () => { toast.removeAttribute('open'); });
+  </script>
+</body>
+</html>
